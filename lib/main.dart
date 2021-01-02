@@ -55,6 +55,16 @@ class _CountDownTimerState extends State<CountDownTimer>
             return Stack(
               children: <Widget>[
                 Align(
+                  alignment: Alignment.topCenter,
+                  child:
+                  Container(
+                    //color: Colors.amber,
+                    color: Colors.redAccent,
+                    height: 1000,
+                    
+                  ),
+                ),
+                Align(
                   alignment: Alignment.bottomCenter,
                   child:
                   Container(
@@ -64,6 +74,7 @@ class _CountDownTimerState extends State<CountDownTimer>
                     controller.value * MediaQuery.of(context).size.height,
                   ),
                 ),
+
                 Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Column(
